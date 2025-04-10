@@ -11,7 +11,7 @@
       "id": "2",
       "player_name": "Cristiano Ronaldo",
       "position": "Forward",
-      "goals": 26,
+      "goals": 29,
       "assists": 10
     },
     {
@@ -137,8 +137,8 @@
       "id": "21",
       "player_name": "Antony",
       "position": "Forward",
-      "goals": 8,
-      "assists": 7
+      "goals": 9,
+      "assists": 8
     },
     {
       "id": 22,
