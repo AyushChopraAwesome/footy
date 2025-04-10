@@ -139,6 +139,13 @@
       "position": "Forward",
       "goals": 8,
       "assists": 7
+    },
+    {
+      "id": 22,
+      "player_name": "Garnacho",
+      "position": "Forward",
+      "goals": 5,
+      "assists": 3
     }
   ]
 }
