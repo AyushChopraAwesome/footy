@@ -1,7 +1,11 @@
-export const dynamic = "force-dynamic"; // optional: makes fetch always run on server
+// app/collection/page.js
+
+import Link from "next/link";
+
+export const dynamic = "force-dynamic";
 
 async function getPlayers() {
-  const res = await fetch("http://localhost:4000/footy");
+  const res = await fetch("http://127.0.0.1:4000/footy");
   return res.json();
 }
 
@@ -11,6 +15,14 @@ export default async function CollectionPage() {
   return (
     <main>
       <h1>Player List</h1>
+
+      {/* 🔘 Home Button */}
+      <p>
+        <Link href="/">
+          <button>Home</button>
+        </Link>
+      </p>
+
       <ul style={{ padding: 0 }}>
         {players.map((player) => (
           <li
@@ -23,9 +35,9 @@ export default async function CollectionPage() {
             }}
           >
             <strong>{player.player_name}</strong> (#{player.id}){" "}
-            <a href={`/collection/${player.id}`} style={{ marginLeft: "10px" }}>
+            <Link href={`/collection/${player.id}`} style={{ marginLeft: "10px" }}>
               more
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
