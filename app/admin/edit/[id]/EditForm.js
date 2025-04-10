@@ -16,6 +16,29 @@ export default function EditForm({ player }) {
 
     const validation = [];
 
+
+    if (name.length < 3 || name.length > 30) {
+        validation.push("Name must be between 3 and 30 characters.");
+      }
+  
+      const validPositions = ["Forward", "Midfielder", "Defender", "Goalkeeper"];
+      if (!validPositions.includes(position)) {
+        validation.push("Position must be one of: Forward, Midfielder, Defender, Goalkeeper.");
+      }
+  
+      if (goals < 0 || isNaN(goals)) {
+        validation.push("Goals must be a non-negative number.");
+      }
+  
+      if (assists < 0 || isNaN(assists)) {
+        validation.push("Assists must be a non-negative number.");
+      }
+  
+      if (validation.length > 0) {
+        setErrors(validation);
+        return;
+      }
+
     await fetch(`http://127.0.0.1:4000/footy/${player.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
