@@ -1,5 +1,3 @@
-// app/collection/page.js
-
 import Link from "next/link";
 
 export const dynamic = "force-dynamic";
