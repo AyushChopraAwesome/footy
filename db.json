@@ -11,7 +11,7 @@
       "id": "2",
       "player_name": "Cristiano Ronaldo",
       "position": "Forward",
-      "goals": 29,
+      "goals": 31,
       "assists": 10
     },
     {
@@ -120,18 +120,18 @@
       "assists": 11
     },
     {
-      "id": "19",
-      "player_name": "Vinícius Júnior",
-      "position": "Forward",
-      "goals": 14,
-      "assists": 10
-    },
-    {
-      "id": 22,
+      "id": "22",
       "player_name": "Garnacho",
       "position": "Forward",
       "goals": 5,
       "assists": 3
+    },
+    {
+      "id": 23,
+      "player_name": "Isco",
+      "position": "Forward",
+      "goals": 4,
+      "assists": 8
     }
   ]
 }

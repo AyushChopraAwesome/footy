@@ -12,7 +12,7 @@ export default function Home() {
     }}>
       <h1 style={{ marginBottom: "20px", color: "#333" }}>Welcome to Footy ⚽</h1>
       <p style={{ marginBottom: "30px", fontSize: "16px", color: "#555" }}>
-        Track soccer players, their goals, assists, and positions — all with a clean admin panel.
+        Track soccer players, their goals, assists, and positions.
       </p>
 
       <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
